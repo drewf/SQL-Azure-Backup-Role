@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="dbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WorkerRole1.My.MySettings.GlobalReference.Default.dbConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tablesTableAdapter" GeneratorDataComponentClassName="tablesTableAdapter" Name="tables" UserDataComponentName="tablesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbConnectionString (MySettings)" DbObjectName="udigs.sys.tables" DbObjectType="View" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="GetData">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT *
+ FROM sys.Tables</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="object_id" DataSetColumn="object_id" />
+              <Mapping SourceColumn="principal_id" DataSetColumn="principal_id" />
+              <Mapping SourceColumn="schema_id" DataSetColumn="schema_id" />
+              <Mapping SourceColumn="parent_object_id" DataSetColumn="parent_object_id" />
+              <Mapping SourceColumn="type" DataSetColumn="type" />
+              <Mapping SourceColumn="type_desc" DataSetColumn="type_desc" />
+              <Mapping SourceColumn="create_date" DataSetColumn="create_date" />
+              <Mapping SourceColumn="modify_date" DataSetColumn="modify_date" />
+              <Mapping SourceColumn="is_ms_shipped" DataSetColumn="is_ms_shipped" />
+              <Mapping SourceColumn="is_published" DataSetColumn="is_published" />
+              <Mapping SourceColumn="is_schema_published" DataSetColumn="is_schema_published" />
+              <Mapping SourceColumn="lob_data_space_id" DataSetColumn="lob_data_space_id" />
+              <Mapping SourceColumn="filestream_data_space_id" DataSetColumn="filestream_data_space_id" />
+              <Mapping SourceColumn="max_column_id_used" DataSetColumn="max_column_id_used" />
+              <Mapping SourceColumn="lock_on_bulk_load" DataSetColumn="lock_on_bulk_load" />
+              <Mapping SourceColumn="uses_ansi_nulls" DataSetColumn="uses_ansi_nulls" />
+              <Mapping SourceColumn="is_replicated" DataSetColumn="is_replicated" />
+              <Mapping SourceColumn="has_replication_filter" DataSetColumn="has_replication_filter" />
+              <Mapping SourceColumn="is_merge_published" DataSetColumn="is_merge_published" />
+              <Mapping SourceColumn="is_sync_tran_subscribed" DataSetColumn="is_sync_tran_subscribed" />
+              <Mapping SourceColumn="has_unchecked_assembly_data" DataSetColumn="has_unchecked_assembly_data" />
+              <Mapping SourceColumn="text_in_row_limit" DataSetColumn="text_in_row_limit" />
+              <Mapping SourceColumn="large_value_types_out_of_row" DataSetColumn="large_value_types_out_of_row" />
+              <Mapping SourceColumn="is_tracked_by_cdc" DataSetColumn="is_tracked_by_cdc" />
+              <Mapping SourceColumn="lock_escalation" DataSetColumn="lock_escalation" />
+              <Mapping SourceColumn="lock_escalation_desc" DataSetColumn="lock_escalation_desc" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tables" msprop:Generator_TableClassName="tablesDataTable" msprop:Generator_TableVarName="tabletables" msprop:Generator_TablePropName="_tables" msprop:Generator_RowDeletingName="tablesRowDeleting" msprop:Generator_UserTableName="tables" msprop:Generator_RowChangingName="tablesRowChanging" msprop:Generator_RowEvHandlerName="tablesRowChangeEventHandler" msprop:Generator_RowDeletedName="tablesRowDeleted" msprop:Generator_RowEvArgName="tablesRowChangeEvent" msprop:Generator_RowChangedName="tablesRowChanged" msprop:Generator_RowClassName="tablesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="object_id" msprop:Generator_ColumnVarNameInTable="columnobject_id" msprop:Generator_ColumnPropNameInRow="object_id" msprop:Generator_ColumnPropNameInTable="object_idColumn" msprop:Generator_UserColumnName="object_id" type="xs:int" />
+              <xs:element name="principal_id" msprop:Generator_ColumnVarNameInTable="columnprincipal_id" msprop:Generator_ColumnPropNameInRow="principal_id" msprop:Generator_ColumnPropNameInTable="principal_idColumn" msprop:Generator_UserColumnName="principal_id" type="xs:int" minOccurs="0" />
+              <xs:element name="schema_id" msprop:Generator_ColumnVarNameInTable="columnschema_id" msprop:Generator_ColumnPropNameInRow="schema_id" msprop:Generator_ColumnPropNameInTable="schema_idColumn" msprop:Generator_UserColumnName="schema_id" type="xs:int" />
+              <xs:element name="parent_object_id" msprop:Generator_ColumnVarNameInTable="columnparent_object_id" msprop:Generator_ColumnPropNameInRow="parent_object_id" msprop:Generator_ColumnPropNameInTable="parent_object_idColumn" msprop:Generator_UserColumnName="parent_object_id" type="xs:int" />
+              <xs:element name="type" msprop:Generator_ColumnVarNameInTable="columntype" msprop:Generator_ColumnPropNameInRow="type" msprop:Generator_ColumnPropNameInTable="typeColumn" msprop:Generator_UserColumnName="type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="type_desc" msprop:Generator_ColumnVarNameInTable="columntype_desc" msprop:Generator_ColumnPropNameInRow="type_desc" msprop:Generator_ColumnPropNameInTable="type_descColumn" msprop:Generator_UserColumnName="type_desc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="create_date" msprop:Generator_ColumnVarNameInTable="columncreate_date" msprop:Generator_ColumnPropNameInRow="create_date" msprop:Generator_ColumnPropNameInTable="create_dateColumn" msprop:Generator_UserColumnName="create_date" type="xs:dateTime" />
+              <xs:element name="modify_date" msprop:Generator_ColumnVarNameInTable="columnmodify_date" msprop:Generator_ColumnPropNameInRow="modify_date" msprop:Generator_ColumnPropNameInTable="modify_dateColumn" msprop:Generator_UserColumnName="modify_date" type="xs:dateTime" />
+              <xs:element name="is_ms_shipped" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnis_ms_shipped" msprop:Generator_ColumnPropNameInRow="is_ms_shipped" msprop:Generator_ColumnPropNameInTable="is_ms_shippedColumn" msprop:Generator_UserColumnName="is_ms_shipped" type="xs:boolean" minOccurs="0" />
+              <xs:element name="is_published" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnis_published" msprop:Generator_ColumnPropNameInRow="is_published" msprop:Generator_ColumnPropNameInTable="is_publishedColumn" msprop:Generator_UserColumnName="is_published" type="xs:boolean" minOccurs="0" />
+              <xs:element name="is_schema_published" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnis_schema_published" msprop:Generator_ColumnPropNameInRow="is_schema_published" msprop:Generator_ColumnPropNameInTable="is_schema_publishedColumn" msprop:Generator_UserColumnName="is_schema_published" type="xs:boolean" minOccurs="0" />
+              <xs:element name="lob_data_space_id" msprop:Generator_ColumnVarNameInTable="columnlob_data_space_id" msprop:Generator_ColumnPropNameInRow="lob_data_space_id" msprop:Generator_ColumnPropNameInTable="lob_data_space_idColumn" msprop:Generator_UserColumnName="lob_data_space_id" type="xs:int" minOccurs="0" />
+              <xs:element name="filestream_data_space_id" msprop:Generator_ColumnVarNameInTable="columnfilestream_data_space_id" msprop:Generator_ColumnPropNameInRow="filestream_data_space_id" msprop:Generator_ColumnPropNameInTable="filestream_data_space_idColumn" msprop:Generator_UserColumnName="filestream_data_space_id" type="xs:int" minOccurs="0" />
+              <xs:element name="max_column_id_used" msprop:Generator_ColumnVarNameInTable="columnmax_column_id_used" msprop:Generator_ColumnPropNameInRow="max_column_id_used" msprop:Generator_ColumnPropNameInTable="max_column_id_usedColumn" msprop:Generator_UserColumnName="max_column_id_used" type="xs:int" />
+              <xs:element name="lock_on_bulk_load" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnlock_on_bulk_load" msprop:Generator_ColumnPropNameInRow="lock_on_bulk_load" msprop:Generator_ColumnPropNameInTable="lock_on_bulk_loadColumn" msprop:Generator_UserColumnName="lock_on_bulk_load" type="xs:boolean" minOccurs="0" />
+              <xs:element name="uses_ansi_nulls" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnuses_ansi_nulls" msprop:Generator_ColumnPropNameInRow="uses_ansi_nulls" msprop:Generator_ColumnPropNameInTable="uses_ansi_nullsColumn" msprop:Generator_UserColumnName="uses_ansi_nulls" type="xs:boolean" minOccurs="0" />
+              <xs:element name="is_replicated" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnis_replicated" msprop:Generator_ColumnPropNameInRow="is_replicated" msprop:Generator_ColumnPropNameInTable="is_replicatedColumn" msprop:Generator_UserColumnName="is_replicated" type="xs:boolean" minOccurs="0" />
+              <xs:element name="has_replication_filter" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnhas_replication_filter" msprop:Generator_ColumnPropNameInRow="has_replication_filter" msprop:Generator_ColumnPropNameInTable="has_replication_filterColumn" msprop:Generator_UserColumnName="has_replication_filter" type="xs:boolean" minOccurs="0" />
+              <xs:element name="is_merge_published" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnis_merge_published" msprop:Generator_ColumnPropNameInRow="is_merge_published" msprop:Generator_ColumnPropNameInTable="is_merge_publishedColumn" msprop:Generator_UserColumnName="is_merge_published" type="xs:boolean" minOccurs="0" />
+              <xs:element name="is_sync_tran_subscribed" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnis_sync_tran_subscribed" msprop:Generator_ColumnPropNameInRow="is_sync_tran_subscribed" msprop:Generator_ColumnPropNameInTable="is_sync_tran_subscribedColumn" msprop:Generator_UserColumnName="is_sync_tran_subscribed" type="xs:boolean" minOccurs="0" />
+              <xs:element name="has_unchecked_assembly_data" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnhas_unchecked_assembly_data" msprop:Generator_ColumnPropNameInRow="has_unchecked_assembly_data" msprop:Generator_ColumnPropNameInTable="has_unchecked_assembly_dataColumn" msprop:Generator_UserColumnName="has_unchecked_assembly_data" type="xs:boolean" minOccurs="0" />
+              <xs:element name="text_in_row_limit" msprop:Generator_ColumnVarNameInTable="columntext_in_row_limit" msprop:Generator_ColumnPropNameInRow="text_in_row_limit" msprop:Generator_ColumnPropNameInTable="text_in_row_limitColumn" msprop:Generator_UserColumnName="text_in_row_limit" type="xs:int" minOccurs="0" />
+              <xs:element name="large_value_types_out_of_row" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnlarge_value_types_out_of_row" msprop:Generator_ColumnPropNameInRow="large_value_types_out_of_row" msprop:Generator_ColumnPropNameInTable="large_value_types_out_of_rowColumn" msprop:Generator_UserColumnName="large_value_types_out_of_row" type="xs:boolean" minOccurs="0" />
+              <xs:element name="is_tracked_by_cdc" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnis_tracked_by_cdc" msprop:Generator_ColumnPropNameInRow="is_tracked_by_cdc" msprop:Generator_ColumnPropNameInTable="is_tracked_by_cdcColumn" msprop:Generator_UserColumnName="is_tracked_by_cdc" type="xs:boolean" minOccurs="0" />
+              <xs:element name="lock_escalation" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnlock_escalation" msprop:Generator_ColumnPropNameInRow="lock_escalation" msprop:Generator_ColumnPropNameInTable="lock_escalationColumn" msprop:Generator_UserColumnName="lock_escalation" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="lock_escalation_desc" msprop:Generator_ColumnVarNameInTable="columnlock_escalation_desc" msprop:Generator_ColumnPropNameInRow="lock_escalation_desc" msprop:Generator_ColumnPropNameInTable="lock_escalation_descColumn" msprop:Generator_UserColumnName="lock_escalation_desc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
